@@ -11,14 +11,16 @@ Wordle is a popular word-guessing game where players have six attempts to guess 
 1. **Initial Guess**: The algorithm starts with an initial guess, selected to maximize potential information gain.
   
 2. **Information Theory**: After receiving feedback from the game, the algorithm calculates the information content of the guess using Shannon's formula:
+
    \[
    I = \log_2 \frac{1}{p}
    \]
+
    where \( I \) is the information in bits, and \( p \) is the probability of the event.
 
-3. **Strategic Guessing**: Instead of simply guessing the word that might be the answer, the algorithm strategically chooses words that will provide the most information about possible solutions. This approach reduces the number of potential solutions more effectively.
+4. **Strategic Guessing**: Instead of simply guessing the word that might be the answer, the algorithm strategically chooses words that will provide the most information about possible solutions. This approach reduces the number of potential solutions more effectively.
 
-4. **Guaranteed Solution**: By iterating this process, the algorithm ensures that it will arrive at the correct word in less than four guesses.
+5. **Guaranteed Solution**: By iterating this process, the algorithm ensures that it will arrive at the correct word in less than four guesses.
 
 ### Example
 
